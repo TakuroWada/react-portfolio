@@ -3,6 +3,7 @@ import Header from './components/molecules/Header'
 import FirstView from './components/molecules/FirstView'
 import Profile from './components/molecules/Profile'
 import Carear from './components/molecules/Carear'
+import Skill from './components/molecules/Skill'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <FirstView />
       <Profile />
       <Carear />
+      <Skill />
     </div>
   );
 }
