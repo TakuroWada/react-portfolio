@@ -7,6 +7,7 @@ import Skill from './components/molecules/Skill'
 import Learning from './components/molecules/Learning'
 import Work from './components/molecules/Work'
 import Contact from './components/molecules/Contact'
+import Footer from './components/molecules/Footer'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Learning />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }
