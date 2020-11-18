@@ -5,6 +5,7 @@ import Profile from './components/molecules/Profile'
 import Carear from './components/molecules/Carear'
 import Skill from './components/molecules/Skill'
 import Learning from './components/molecules/Learning'
+import Work from './components/molecules/Work'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Carear />
       <Skill />
       <Learning />
+      <Work />
     </div>
   );
 }
