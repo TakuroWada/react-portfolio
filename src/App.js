@@ -4,6 +4,7 @@ import FirstView from './components/molecules/FirstView'
 import Profile from './components/molecules/Profile'
 import Carear from './components/molecules/Carear'
 import Skill from './components/molecules/Skill'
+import Learning from './components/molecules/Learning'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Profile />
       <Carear />
       <Skill />
+      <Learning />
     </div>
   );
 }
