@@ -1,5 +1,5 @@
 import './assets/reset.css';
-import './assets/App.css';
+import './assets/App.scss';
 import Header from './components/molecules/Header'
 import FirstView from './components/molecules/FirstView'
 import Profile from './components/molecules/Profile'
