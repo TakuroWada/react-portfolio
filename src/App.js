@@ -14,7 +14,7 @@ import Footer from './components/molecules/Footer'
 function App() {
   return (
     <div className="App">
-      <header><Header /></header>
+      <Header />
       <FirstView />
       <Profile />
       <Carear />
