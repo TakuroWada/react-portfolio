@@ -1,14 +1,14 @@
 import './assets/reset.css';
 import './assets/App.scss';
-import Header from './components/molecules/Header'
-import FirstView from './components/molecules/FirstView'
-import Profile from './components/molecules/Profile'
-import Carear from './components/molecules/Carear'
-import Skill from './components/molecules/Skill'
-import Learning from './components/molecules/Learning'
-import Work from './components/molecules/Work'
-import Contact from './components/molecules/Contact'
-import Footer from './components/molecules/Footer'
+import Header from './components/organisms/Header'
+import FirstView from './components/organisms/FirstView'
+import Profile from './components/organisms/Profile'
+import Carear from './components/organisms/Carear'
+import Skill from './components/organisms/Skill'
+import Learning from './components/organisms/Learning'
+import Work from './components/organisms/Work'
+import Contact from './components/organisms/Contact'
+import Footer from './components/organisms/Footer'
 
 
 function App() {
