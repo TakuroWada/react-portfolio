@@ -6,7 +6,7 @@ import Profile from './components/organisms/Profile'
 import Carear from './components/organisms/Carear'
 import Skill from './components/organisms/Skill'
 import Learning from './components/organisms/Learning'
-import Work from './components/molecules/Work'
+import Work from './components/organisms/Work'
 import Contact from './components/molecules/Contact'
 import Footer from './components/molecules/Footer'
 
