@@ -1,6 +1,6 @@
 import './assets/reset.css';
 import './assets/App.scss';
-import Header from './components/molecules/Header'
+import Header from './components/organisms/Header'
 import FirstView from './components/molecules/FirstView'
 import Profile from './components/molecules/Profile'
 import Carear from './components/molecules/Carear'
