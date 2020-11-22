@@ -8,7 +8,7 @@ import Skill from './components/organisms/Skill'
 import Learning from './components/organisms/Learning'
 import Work from './components/organisms/Work'
 import Contact from './components/organisms/Contact'
-import Footer from './components/molecules/Footer'
+import Footer from './components/organisms/Footer'
 
 
 function App() {
