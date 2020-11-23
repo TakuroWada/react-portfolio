@@ -1,35 +1,81 @@
 import React from 'react'
+import styled from 'styled-components';
+import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle'
 
 class Profile extends React.Component {
 
-    profile = {
-        name:'和田 拓朗 / Takuro Wada',
-        birth:'1994/06 京都市出身 東京都在住',
-        hobby:'デジタルガジェットを買う・見る・さわる、DIY・インテリア、バイクに乗る、 筋トレ、コーヒー、銭湯、YouTubeを見る等'
-    }
+    profileItem = [
+        {
+            title: 'Name',
+            text: '和田 拓朗 / Takuro Wada',
+        },
+        {
+            title: 'Birth',
+            text: '1994/06 京都市出身 東京都在住',
+        },
+        {
+            title: 'Hobby',
+            text: 'デジタルガジェットを買う・見る・さわる、DIY・インテリア、バイクに乗る、 筋トレ、コーヒー、銭湯、YouTubeを見る等',
+        }
+    ];
 
     render() {
         return (
-            <div>
+            <Content>
                 <SectionTitle title='Profile' />
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <td>{this.profile.name}</td>
-                    </tr>
-                    <tr>
-                        <th>Birth</th>
-                        <td>{this.profile.birth}</td>
-                    </tr>
-                    <tr>
-                        <th>Hobby</th>
-                        <td>{this.profile.hobby}</td>
-                    </tr>
-                </table>
-            </div>
+                    {this.profileItem.map((listItem) => {
+                        return <ProfileItem title={listItem.title} text={listItem.text}/>
+                    })}
+            </Content>
         );
     }
 }
+
+class ProfileItem extends React.Component {
+    render() {
+        return (
+            <ItemWrapper>
+                <h3>{this.props.title}</h3>
+                <p>{this.props.text}</p>
+            </ItemWrapper>
+        )
+    }
+}
+
+const Content = styled.div`
+    padding: 24px 8px;
+
+    h2 {
+        text-align: center;
+    }
+
+    @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        padding-top: 40px;
+    }
+`;
+
+const ItemWrapper = styled.div`
+    margin: 32px auto 0 auto;
+    max-width: 260px;
+    width: 100%;
+    
+    h3 {
+        color: #131A29;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 8px;
+    }
+    @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        margin: 32px auto 0 auto;
+        max-width: 320px;
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+`;
 
 export default Profile;
