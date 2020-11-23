@@ -1,4 +1,6 @@
 import React from 'react'
+import styled from 'styled-components';
+import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle'
 
 class Profile extends React.Component {
@@ -20,12 +22,12 @@ class Profile extends React.Component {
 
     render() {
         return (
-            <div>
+            <Content>
                 <SectionTitle title='Profile' />
-                {this.profileItem.map((listItem) => {
-                    return <ProfileItem title={listItem.title} text={listItem.text}/>
-                })}
-            </div>
+                    {this.profileItem.map((listItem) => {
+                        return <ProfileItem title={listItem.title} text={listItem.text}/>
+                    })}
+            </Content>
         );
     }
 }
@@ -33,12 +35,47 @@ class Profile extends React.Component {
 class ProfileItem extends React.Component {
     render() {
         return (
-            <div>
+            <ItemWrapper>
                 <h3>{this.props.title}</h3>
                 <p>{this.props.text}</p>
-            </div>
+            </ItemWrapper>
         )
     }
 }
+
+const Content = styled.div`
+    padding: 24px 8px;
+
+    h2 {
+        text-align: center;
+    }
+
+    @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        padding-top: 40px;
+    }
+`;
+
+const ItemWrapper = styled.div`
+    margin: 32px auto 0 auto;
+    max-width: 260px;
+    width: 100%;
+    
+    h3 {
+        color: #131A29;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 8px;
+    }
+    @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        margin: 32px auto 0 auto;
+        max-width: 320px;
+    
+        h3 {
+            font-size: 20px;
+        }
+    }
+`;
 
 export default Profile;
