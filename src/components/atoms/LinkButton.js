@@ -1,10 +1,12 @@
-
 import React from 'react'
 
 class LinkButton extends React.Component {
+
     render() {
         return (
-            <button onClick={this.props.link}>{this.props.text}</button>
+            <a href={this.props.link} >
+                <img src={this.props.icon} alt={this.props.text} />
+            </a>
         );
     }
 }
