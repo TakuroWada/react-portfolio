@@ -1,4 +1,6 @@
 import React from 'react'
+import styled from 'styled-components';
+import { breakPoint } from '../../common/breakPoint';
 import LinkButton from '../atoms/LinkButton'
 import GitHubIcon from '../../assets/images/githubIcon.png'
 import QiitaIcon from '../../assets/images/qiitaIcon.png'
@@ -27,13 +29,23 @@ class LinkArea extends React.Component {
     render() {
         
         return (
-            <div>
+            <LinkBox>
                 {this.linkItem.map((listItem) => {
                     return <LinkButton link={ listItem.link } icon={ listItem.icon } text={ listItem.text }/>
                     })}
-            </div>
+            </LinkBox>
         );
     }
 }
+
+const LinkBox = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: 0 8px;
+    }
+`;
 
 export default LinkArea;
