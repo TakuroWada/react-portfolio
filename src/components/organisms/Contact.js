@@ -31,6 +31,7 @@ class ContactItem extends React.Component {
 const ContactContent = styled.div`
     width: 100%;
     padding: 24px 8px;
+    background-color: #fafafa;
 
     h2 {
         text-align: center;
