@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle'
 import LinkImage from '../atoms/LinkImage'
+import BackGround from '../../assets/images/section-bg.jpg'
 
 class Work extends React.Component {
 
@@ -22,7 +23,9 @@ class Work extends React.Component {
 //以下スタイル
 const WorkContent = styled.div`
     width: 100%;
-    padding: 24px 8px;
+    padding: 64px 8px;
+    background-image: url(${BackGround});
+    background-size: cover;
 
     h2 {
         text-align: center;
@@ -34,7 +37,7 @@ const WorkContent = styled.div`
     }
 
     @media screen and (min-width: ${breakPoint.tabletMin}px) {
-        padding: 32px 8px;
+        padding: 40px 8px;
     }
 `;
 

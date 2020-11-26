@@ -5,6 +5,7 @@ import Icon from '../atoms/Icon'
 import LinkArea from '../molecules/LinkArea'
 import ProfleImage from '../../assets/images/profleImg.jpg'
 import ScrollImage from '../../assets/images/scrollIcon.png'
+import BackGround from '../../assets/images/first-view-bg.jpg'
 class FirstView extends React.Component {
     render() {
         return (
@@ -40,9 +41,10 @@ class ScrollIcon extends React.Component {
 
 const FView = styled.div`
     padding: 96px 8px 16px 8px;
-    background-color: #888;
     width: 100%;
     margin: 0 auto;
+    background-image: url(${BackGround});
+    background-size: cover;
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
         padding: 160px 0 32px 0;
