@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle'
+import BackGround from '../../assets/images/section-bg.jpg'
 
 class Profile extends React.Component {
 
@@ -22,12 +23,12 @@ class Profile extends React.Component {
 
     render() {
         return (
-            <Content>
+            <ProfileContent>
                 <SectionTitle title='Profile' />
                     {this.profileItem.map((listItem) => {
                         return <ProfileItem title={listItem.title} text={listItem.text}/>
                     })}
-            </Content>
+            </ProfileContent>
         );
     }
 }
@@ -43,15 +44,17 @@ class ProfileItem extends React.Component {
     }
 }
 
-const Content = styled.div`
-    padding: 24px 8px;
+const ProfileContent = styled.div`
+    padding: 40px 8px;
+    background-image: url(${BackGround});
+    background-size: cover;
 
     h2 {
         text-align: center;
     }
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
-        padding-top: 40px;
+        padding: 64px 0;
     }
 `;
 
