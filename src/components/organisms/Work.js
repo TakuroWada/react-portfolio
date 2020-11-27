@@ -4,6 +4,8 @@ import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle'
 import LinkImage from '../atoms/LinkImage'
 import BackGround from '../../assets/images/section-bg.jpg'
+import WorkImg1 from '../../assets/images/work1.png'
+import WorkImg2 from '../../assets/images/work2.png'
 
 class Work extends React.Component {
 
@@ -12,8 +14,8 @@ class Work extends React.Component {
             <WorkContent id='work'>
                 <SectionTitle title='Work' />
                 <WorkWrappr>
-                    <LinkImage name='work1' url='#' image='#' />
-                    <LinkImage name='work2' url='#' image='#' />
+                    <LinkImage name='看板制作撤去の達人HP (コーディング)' url='https://kanbantatsujin.com/' image={ WorkImg1 } />
+                    <LinkImage name='かんばんの救急車HP (UI/UX/コーディング)' url='https://kanban-rescue.com/' image={ WorkImg2 } />
                 </WorkWrappr>
             </WorkContent>
         );
