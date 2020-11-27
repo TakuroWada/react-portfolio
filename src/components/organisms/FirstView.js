@@ -9,7 +9,7 @@ import BackGround from '../../assets/images/first-view-bg.jpg'
 class FirstView extends React.Component {
     render() {
         return (
-            <FView>
+            <FView id='top'>
                 <Catch>Welcom To My Portfolio!</Catch>
 
                 <FlexBox>

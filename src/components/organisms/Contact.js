@@ -8,7 +8,7 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <ContactContent>
+            <ContactContent id='contact'>
                 <SectionTitle title='Contact' />
                 <ContactItem name='Email' value='takuro.wada6@gmail.com' icon={GmailLogo} />
             </ContactContent>
