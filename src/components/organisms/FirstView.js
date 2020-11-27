@@ -52,13 +52,14 @@ const FView = styled.div`
 `;
 
 const Catch = styled.h2`
-    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
     font-weight: bold;
     color:#fafafa;
     text-align: center;
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
-        font-size: 32px;
+        font-size: 48px;
     }
 `
 
@@ -83,9 +84,14 @@ const NameArea = styled.div`
 `;
 
 const Name = styled.p`
+    font-family: 'Caveat', cursive;
     font-size: 18px;
     color: #fafafa;
     text-align: center;
+
+    @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        font-size: 24px;
+    }
 `;
 
 const FlexBox = styled.div`
