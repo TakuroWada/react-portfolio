@@ -224,7 +224,7 @@ class Skill extends React.Component {
     render() {
         
         return (
-            <SkillContent>
+            <SkillContent id='skill'>
                 <SectionTitle title='Skill' />
 
                 <SelectBox onChange={ this.doChange }>

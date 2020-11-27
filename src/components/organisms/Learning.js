@@ -52,7 +52,7 @@ class Learning extends React.Component {
 
     render() {
         return (
-            <LearningContent>
+            <LearningContent id='learning'>
                 <SectionTitle title='Learning' />
                 <DisplayArea> 
                     <LearningSection color={this.nowSectionColor}>

@@ -23,7 +23,7 @@ class Profile extends React.Component {
 
     render() {
         return (
-            <ProfileContent>
+            <ProfileContent id="profile">
                 <SectionTitle title='Profile' />
                     {this.profileItem.map((listItem) => {
                         return <ProfileItem title={listItem.title} text={listItem.text}/>

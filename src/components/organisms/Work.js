@@ -9,7 +9,7 @@ class Work extends React.Component {
 
     render() {
         return (
-            <WorkContent>
+            <WorkContent id='work'>
                 <SectionTitle title='Work' />
                 <WorkWrappr>
                     <LinkImage name='work1' url='#' image='#' />
