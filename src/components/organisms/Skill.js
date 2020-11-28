@@ -42,12 +42,12 @@ const programLanguages = [
     {
         icon: HtmlLogo,
         name: 'HTML',
-        text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、SEOを意識したコーディング、オプション選択、ユーザビリティを意識した属性選択'
+        text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、オプション選択、SEOを意識した構造設計'
     },
     {
         icon: CssLogo,
         name: 'CSS',
-        text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファースト、修正を意識したCSS設計(BEM)'
+        text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファーストコーディング、修正を意識したCSS設計(BEM)'
     },
     {
         icon: SassLogo,
@@ -57,12 +57,12 @@ const programLanguages = [
     {
         icon: JsLogo,
         name: 'JS',
-        text: 'Web制作業務で部分的に使用した。現在進行形で学習中。本ポートフォリオでReactとともに使用。'
+        text: 'Web制作業務で部分的に使用。現在進行形で学習中。本ポートフォリオでReactと合わせて使用。'
     },
     {
         icon: RubyLogo,
         name: 'Ruby',
-        text: '社内の備品入出庫の管理システムを作るために使用。Railsを使用したので、Rubyに関しては基本的な文法程度。'
+        text: '社内備品の入出庫管理システムを作るために使用。Railsを使用したので、Rubyに関しては基本的な文法程度。'
     },
     {
         icon: JavaLogo,
@@ -72,7 +72,7 @@ const programLanguages = [
     {
         icon: PhpLogo,
         name: 'PHP',
-        text: 'Web制作業務で使用。主にWordpressのカスタマイズ、オリジナルテーマ作成時に必要な文法を学習し、Wordpressサイトを実装した。'
+        text: 'Web制作業務で1年使用。主にWordpressのカスタマイズ、オリジナルテーマ作成時に必要な文法を学習し、Wordpressサイトを実装した。'
     },
     {
         icon: CLogo,
@@ -109,12 +109,12 @@ const infrastructure = [
     {
         icon: VBLogo,
         name: 'VirtualBox',
-        text: '社内の在庫管理システム作成時に使用。仮想環境の構築'
+        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築'
     },
     {
         icon: VagrantLogo,
         name: 'Vagrant',
-        text: '社内の在庫管理システム作成時に使用。'
+        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築'
     },
     {
         icon: RserverLogo,
@@ -127,17 +127,17 @@ const designTools = [
     {
         icon: XdLogo,
         name: 'XD',
-        text: 'Webサイト制作で1年使用。Webサイトのデザインカンプの作成、リピートグリッド、プロトタイプ作成、コンポーネント分けなど'
+        text: 'Webサイト制作で1年使用。Webサイトのデザインカンプの作成、リピートグリッド、プロトタイプ作成、コンポーネント分け'
     },
     {
         icon: PsLogo,
         name: 'PS',
-        text: 'Webサイト制作で使用。簡単な画像加工ができる程度。'
+        text: 'Webサイト制作で使用。簡単な画像加工、書き出しができる程度。'
     },
     {
         icon: AiLogo,
         name: 'Ai',
-        text: 'Webサイト制作で使用。簡単なアイコン作成やロゴ作成ができる程度。'
+        text: 'Webサイト制作で使用。簡単なアイコン作成やロゴ作成、書き出しができる程度。'
     }                             
 ];
 
@@ -153,7 +153,7 @@ const editors = [
     {
         icon: VscodeLogo,
         name: 'VSCode',
-        text: 'Web制作業務で1年。それ以前から個人的に使用。Gitとの連携、プラグインの使用、ショートカットなど'
+        text: 'Web制作業務で1年。それ以前から個人的に使用。Git操作、プラグインの使用'
     },
     {
         icon: AsLogo,
