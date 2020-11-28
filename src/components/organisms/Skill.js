@@ -219,6 +219,8 @@ class Skill extends React.Component {
     doChange(e) {
         this.setState({ skillType: skillList[e.target.value] });
         this.setState({ skillTitle: e.target.value });
+        this.setState({ skillName: '選択してください' });
+        this.setState({ skillText: '' });
     }
     
     render() {
