@@ -39,7 +39,7 @@ const WorkContent = styled.div`
     }
 
     @media screen and (min-width: ${breakPoint.tabletMin}px) {
-        padding: 40px 8px;
+        padding: 64px 8px;
     }
 `;
 

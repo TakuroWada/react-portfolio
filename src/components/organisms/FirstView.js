@@ -6,6 +6,7 @@ import LinkArea from '../molecules/LinkArea'
 import ProfleImage from '../../assets/images/profleImg.jpg'
 import ScrollImage from '../../assets/images/scrollIcon.png'
 import BackGround from '../../assets/images/first-view-bg.jpg'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 class FirstView extends React.Component {
     render() {
         return (
@@ -24,7 +25,8 @@ class FirstView extends React.Component {
                 </FlexBox>
 
                 <ScrollIconWrapper>
-                    <ScrollIcon link='#' image={ScrollImage} />
+                    <ScrollText>Scroll!</ScrollText>
+                    <ScrollIcon link='#profile' image={ScrollImage} />
                 </ScrollIconWrapper>
             </FView>
         );
@@ -34,7 +36,9 @@ class FirstView extends React.Component {
 class ScrollIcon extends React.Component {
     render() {
         return (
-        <a href={this.props.link}><ScrollImg src={this.props.image} alt='scroll' /></a>
+            <AnchorLink href={this.props.link} offset="50">
+                <ScrollImg src={this.props.image} alt='scroll' />
+            </AnchorLink>
         );
     }
 }
@@ -53,7 +57,7 @@ const FView = styled.div`
 
 const Catch = styled.h2`
     font-family: 'Caveat', cursive;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     color:#fafafa;
     text-align: center;
@@ -85,7 +89,7 @@ const NameArea = styled.div`
 
 const Name = styled.p`
     font-family: 'Caveat', cursive;
-    font-size: 18px;
+    font-size: 20px;
     color: #fafafa;
     text-align: center;
 
@@ -109,13 +113,21 @@ const ScrollIconWrapper = styled.div`
     text-align: center;
 `;
 
-const ScrollImg = styled.img`
-    width: 80px;
-    height: 64px;
+const ScrollText = styled.p`
+    color: #fafafa;
+    font-size: 20px;
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
-        width: 120px;
-        height: 96px;
+        font-size: 24px;
+    }
+`;
+
+
+const ScrollImg = styled.img`
+    width: 32px;
+
+    @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        width: 64px;
     }
 `;
 

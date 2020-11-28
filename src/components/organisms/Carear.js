@@ -108,6 +108,7 @@ const CarearContent = styled.div`
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
         margin: 0 auto;
+        padding: 64px 8px;
         background-color: #fafafa;
     }
 `;

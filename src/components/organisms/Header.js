@@ -37,7 +37,7 @@ class Header extends React.Component {
 }
 
 const Head = styled.header`
-    background-color: #333;
+    background-color: #131A29CC;
     display:flex;
     position: fixed;
     justify-content:space-between;
