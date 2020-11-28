@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import { breakPoint } from '../../common/breakPoint';
 import MediaQuery from "react-responsive";
-import SimpleMenu from '../atoms/SimpleMenu'
+import SimpleMenu from '../molecules/SimpleMenu'
 import MenuItem from '@material-ui/core/MenuItem';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 class Header extends React.Component {

@@ -5,7 +5,7 @@ import { breakPoint } from '../../common/breakPoint';
 class LinkButton extends React.Component {
     render() {
         return (
-            <Link href={this.props.link} >
+            <Link href={this.props.link} target="_blank" rel="noopener noreferrer">
                 <Img src={this.props.icon} alt={this.props.text} />
             </Link>
         );
