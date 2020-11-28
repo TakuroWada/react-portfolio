@@ -27,8 +27,8 @@ const Link = styled.a`
 `;
 
 const Img = styled.img`
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
         width: 32px;
