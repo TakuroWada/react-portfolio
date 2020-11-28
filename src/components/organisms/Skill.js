@@ -41,12 +41,12 @@ import FELogo from '../../assets/images/fe.png'
 const programLanguages = [
     {
         icon: HtmlLogo,
-        name: 'HTML',
+        name: 'HTML5',
         text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、オプション選択、SEOを意識した構造設計'
     },
     {
         icon: CssLogo,
-        name: 'CSS',
+        name: 'CSS3',
         text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファーストコーディング、修正を意識したCSS設計(BEM)'
     },
     {
@@ -96,7 +96,7 @@ const taskControl = [
     {
         icon: GitLabLogo,
         name: 'GitLab',
-        text: 'Android車載ソフトの開発で1年使用。プロジェクトではGUIツールのsourceTreeと合わせて使用。'
+        text: 'Android車載ソフトの開発で1年使用。プロジェクトではGUIツールのSourceTreeと合わせて使用。'
     },
     {
         icon: JiraLogo,
@@ -131,7 +131,7 @@ const designTools = [
     },
     {
         icon: PsLogo,
-        name: 'PS',
+        name: 'Ps',
         text: 'Webサイト制作で使用。簡単な画像加工、書き出しができる程度。'
     },
     {
@@ -253,7 +253,7 @@ class Skill extends React.Component {
     doChange(e) {
         this.setState({ skillType: skillList[e.target.value] });
         this.setState({ skillTitle: e.target.value });
-        this.setState({ skillName: '選択してください' });
+        this.setState({ skillName: '見たいスキルを選択してください' });
         this.setState({ skillText: '' });
     }
     
