@@ -32,6 +32,10 @@ import EclipseLogo from '../../assets/images/eclipse.svg'
 import PsLogo from '../../assets/images/ps.png'
 import AiLogo from '../../assets/images/ai.svg'
 import XdLogo from '../../assets/images/xd.png'
+import VBLogo from '../../assets/images/vb-logo.png'
+import VagrantLogo from '../../assets/images/vagrant.svg'
+import RserverLogo from '../../assets/images/server.png'
+import FELogo from '../../assets/images/fe.png'
 
 
 const programLanguages = [
@@ -101,6 +105,24 @@ const taskControl = [
     }                                            
 ];
 
+const infrastructure = [
+    {
+        icon: VBLogo,
+        name: 'VirtualBox',
+        text: '社内の在庫管理システム作成時に使用。仮想環境の構築'
+    },
+    {
+        icon: VagrantLogo,
+        name: 'Vagrant',
+        text: '社内の在庫管理システム作成時に使用。'
+    },
+    {
+        icon: RserverLogo,
+        name: 'RentalServer',
+        text: 'xserver,さくらサーバーでのWebサイト公開。SSL化'
+    }                                 
+];
+
 const designTools = [
     {
         icon: XdLogo,
@@ -117,6 +139,14 @@ const designTools = [
         name: 'Ai',
         text: 'Webサイト制作で使用。簡単なアイコン作成やロゴ作成ができる程度。'
     }                             
+];
+
+const qualification = [
+    {
+        icon: FELogo,
+        name: '基本情報技術者',
+        text: '午後問題の選択言語はC言語'
+    }
 ];
 
 const editors = [
@@ -179,20 +209,24 @@ const databases = [
 
 const skillList = {
     'ProgramLanguages': programLanguages,
-    'TaskControl':taskControl,
+    'TaskControl': taskControl,
+    'Infrastructure': infrastructure,
     'DesignTool':designTools,
     'Editor/IDE':editors,
     'FW/CMS':fwCms,
-    'DataBase':databases
+    'DataBase': databases,
+    'Qualification': qualification
 }
 
 const option = [
     'ProgramLanguages',
     'TaskControl',
+    'Infrastructure',
     'DesignTool',
     'Editor/IDE',
     'FW/CMS',
-    'DataBase'
+    'DataBase',
+    'Qualification'
 ];
 
 class Skill extends React.Component {
