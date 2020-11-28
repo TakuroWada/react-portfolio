@@ -6,7 +6,7 @@ class LinkImage extends React.Component {
         return (
             <div>
                 <h3>{this.props.name}</h3>
-                <a href={this.props.url}><Img src={this.props.image} alt={this.props.name}/></a>
+                <a href={this.props.url} target="_blank" rel="noopener noreferrer"><Img src={this.props.image} alt={this.props.name}/></a>
             </div>
         );
     }
