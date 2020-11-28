@@ -112,7 +112,7 @@ const LearningContent = styled.div`
     }
 
     @media screen and (min-width: ${breakPoint.tabletMin}px) {
-        padding: 32px 8px;
+        padding: 64px 8px;
     }
 `;
 
