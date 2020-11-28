@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle';
 import Text from '../atoms/Text';
-import SkillBg from '../../assets/images/skillBg.jpeg'
+import BackGround from '../../assets/images/section-bg.jpg'
 import SelectIcon from '../../assets/images/icon_arrow.png'
 
 //アイコン
@@ -276,7 +276,7 @@ class SkillCard extends React.Component {
 const SkillContent = styled.div`
     width: 100%;
     padding: 24px 8px;
-    background-image: url(${SkillBg});
+    background-image: url(${BackGround});
 
 
     h2 {
