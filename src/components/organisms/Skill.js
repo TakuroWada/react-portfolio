@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { breakPoint } from '../../common/breakPoint';
 import SectionTitle from '../atoms/SectionTitle';
 import Text from '../atoms/Text';
-import SkillBg from '../../assets/images/skillBg.jpeg'
+import BackGround from '../../assets/images/section-bg.jpg'
 import SelectIcon from '../../assets/images/icon_arrow.png'
 
 //アイコン
@@ -32,18 +32,22 @@ import EclipseLogo from '../../assets/images/eclipse.svg'
 import PsLogo from '../../assets/images/ps.png'
 import AiLogo from '../../assets/images/ai.svg'
 import XdLogo from '../../assets/images/xd.png'
+import VBLogo from '../../assets/images/vb-logo.png'
+import VagrantLogo from '../../assets/images/vagrant.svg'
+import RserverLogo from '../../assets/images/server.png'
+import FELogo from '../../assets/images/fe.png'
 
 
 const programLanguages = [
     {
         icon: HtmlLogo,
-        name: 'HTML',
-        text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、SEOを意識したコーディング、オプション選択、ユーザビリティを意識した属性選択'
+        name: 'HTML5',
+        text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、オプション選択、SEOを意識した構造設計'
     },
     {
         icon: CssLogo,
-        name: 'CSS',
-        text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファースト、修正を意識したCSS設計(BEM)'
+        name: 'CSS3',
+        text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファーストコーディング、修正を意識したCSS設計(BEM)'
     },
     {
         icon: SassLogo,
@@ -53,12 +57,12 @@ const programLanguages = [
     {
         icon: JsLogo,
         name: 'JS',
-        text: 'Web制作業務で部分的に使用した。現在進行形で学習中。本ポートフォリオでReactとともに使用。'
+        text: 'Web制作業務で部分的に使用。現在進行形で学習中。本ポートフォリオでReactと合わせて使用。'
     },
     {
         icon: RubyLogo,
         name: 'Ruby',
-        text: '社内の備品入出庫の管理システムを作るために使用。Railsを使用したので、Rubyに関しては基本的な文法程度。'
+        text: '社内備品の入出庫管理システムを作るために使用。Railsを使用したので、Rubyに関しては基本的な文法程度。'
     },
     {
         icon: JavaLogo,
@@ -68,7 +72,7 @@ const programLanguages = [
     {
         icon: PhpLogo,
         name: 'PHP',
-        text: 'Web制作業務で使用。主にWordpressのカスタマイズ、オリジナルテーマ作成時に必要な文法を学習し、Wordpressサイトを実装した。'
+        text: 'Web制作業務で1年使用。主にWordpressのカスタマイズ、オリジナルテーマ作成時に必要な文法を学習し、Wordpressサイトを実装した。'
     },
     {
         icon: CLogo,
@@ -92,7 +96,7 @@ const taskControl = [
     {
         icon: GitLabLogo,
         name: 'GitLab',
-        text: 'Android車載ソフトの開発で1年使用。プロジェクトではGUIツールのsourceTreeと合わせて使用。'
+        text: 'Android車載ソフトの開発で1年使用。プロジェクトではGUIツールのSourceTreeと合わせて使用。'
     },
     {
         icon: JiraLogo,
@@ -101,29 +105,55 @@ const taskControl = [
     }                                            
 ];
 
+const infrastructure = [
+    {
+        icon: VBLogo,
+        name: 'VirtualBox',
+        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築'
+    },
+    {
+        icon: VagrantLogo,
+        name: 'Vagrant',
+        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築'
+    },
+    {
+        icon: RserverLogo,
+        name: 'RentalServer',
+        text: 'xserver,さくらサーバーでのWebサイト公開。SSL化'
+    }                                 
+];
+
 const designTools = [
     {
         icon: XdLogo,
         name: 'XD',
-        text: 'Webサイト制作で1年使用。Webサイトのデザインカンプの作成、リピートグリッド、プロトタイプ作成、コンポーネント分けなど'
+        text: 'Webサイト制作で1年使用。Webサイトのデザインカンプの作成、リピートグリッド、プロトタイプ作成、コンポーネント分け'
     },
     {
         icon: PsLogo,
-        name: 'PS',
-        text: 'Webサイト制作で使用。簡単な画像加工ができる程度。'
+        name: 'Ps',
+        text: 'Webサイト制作で使用。簡単な画像加工、書き出しができる程度。'
     },
     {
         icon: AiLogo,
         name: 'Ai',
-        text: 'Webサイト制作で使用。簡単なアイコン作成やロゴ作成ができる程度。'
+        text: 'Webサイト制作で使用。簡単なアイコン作成やロゴ作成、書き出しができる程度。'
     }                             
+];
+
+const qualification = [
+    {
+        icon: FELogo,
+        name: '基本情報技術者',
+        text: '午後問題の選択言語はC言語'
+    }
 ];
 
 const editors = [
     {
         icon: VscodeLogo,
         name: 'VSCode',
-        text: 'Web制作業務で1年。それ以前から個人的に使用。Gitとの連携、プラグインの使用、ショートカットなど'
+        text: 'Web制作業務で1年。それ以前から個人的に使用。Git操作、プラグインの使用'
     },
     {
         icon: AsLogo,
@@ -179,20 +209,24 @@ const databases = [
 
 const skillList = {
     'ProgramLanguages': programLanguages,
-    'TaskControl':taskControl,
+    'TaskControl': taskControl,
+    'Infrastructure': infrastructure,
     'DesignTool':designTools,
     'Editor/IDE':editors,
     'FW/CMS':fwCms,
-    'DataBase':databases
+    'DataBase': databases,
+    'Qualification': qualification
 }
 
 const option = [
     'ProgramLanguages',
     'TaskControl',
+    'Infrastructure',
     'DesignTool',
     'Editor/IDE',
     'FW/CMS',
-    'DataBase'
+    'DataBase',
+    'Qualification'
 ];
 
 class Skill extends React.Component {
@@ -219,6 +253,8 @@ class Skill extends React.Component {
     doChange(e) {
         this.setState({ skillType: skillList[e.target.value] });
         this.setState({ skillTitle: e.target.value });
+        this.setState({ skillName: '見たいスキルを選択してください' });
+        this.setState({ skillText: '' });
     }
     
     render() {
@@ -274,7 +310,7 @@ class SkillCard extends React.Component {
 const SkillContent = styled.div`
     width: 100%;
     padding: 24px 8px;
-    background-image: url(${SkillBg});
+    background-image: url(${BackGround});
 
 
     h2 {
