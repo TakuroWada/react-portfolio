@@ -42,17 +42,17 @@ const programLanguages = [
     {
         icon: HtmlLogo,
         name: 'HTML5',
-        text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、オプション選択、SEOを意識した構造設計'
+        text: 'Web制作業務で1年、それ以前から個人的に使用。基本タグの使い分け、属性の使い分け、オプション選択、SEOを意識した構造設計。'
     },
     {
         icon: CssLogo,
         name: 'CSS3',
-        text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファーストコーディング、修正を意識したCSS設計(BEM)'
+        text: 'Web制作業務で1年、それ以前から個人的に使用。基本的なプロパティの使用、レスポンシブ対応(スマホ、タブレット)、モバイルファーストコーディング、修正を意識したCSS設計(BEM)。'
     },
     {
         icon: SassLogo,
         name: 'Sass',
-        text: 'Web制作業務で1年使用。基本公文の理解(Scss記法)、BEM記法との併用、修正、再利用を意識したファイル分け、WordPressでの使用'
+        text: 'Web制作業務で1年使用。基本公文の理解(Scss記法)、BEM記法との併用、修正、再利用を意識したファイル分け、WordPressでの使用。'
     },
     {
         icon: JsLogo,
@@ -86,12 +86,12 @@ const taskControl = [
     {
         icon: GitLogo,
         name: 'Git',
-        text: '基本的なgitコマンド、リモートリポジトリとのSSH接続'
+        text: '基本的なgitコマンド、リモートリポジトリとのSSH接続。'
     },
     {
         icon: GitHubLogo,
         name: 'GitHub',
-        text: '社内の在庫管理システム作成時に使用。基本コマンド、簡易的なGitflowでのバージョン管理、issueでのタスク管理、ブランチの切り分け、プルリクエスト'
+        text: '社内の在庫管理システム作成時に使用。基本コマンド、簡易的なGitflowでのバージョン管理、issueでのタスク管理、ブランチの切り分け、プルリクエスト。'
     },
     {
         icon: GitLabLogo,
@@ -109,17 +109,17 @@ const infrastructure = [
     {
         icon: VBLogo,
         name: 'VirtualBox',
-        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築'
+        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築。'
     },
     {
         icon: VagrantLogo,
         name: 'Vagrant',
-        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築'
+        text: '社内の在庫管理システム作成時に使用。rails仮想環境の構築。'
     },
     {
         icon: RserverLogo,
         name: 'RentalServer',
-        text: 'xserver,さくらサーバーでのWebサイト公開。SSL化'
+        text: 'xserver,さくらサーバーでのWebサイト公開。SSL化。'
     }                                 
 ];
 
@@ -127,7 +127,7 @@ const designTools = [
     {
         icon: XdLogo,
         name: 'XD',
-        text: 'Webサイト制作で1年使用。Webサイトのデザインカンプの作成、リピートグリッド、プロトタイプ作成、コンポーネント分け'
+        text: 'Webサイト制作で1年使用。Webサイトのデザインカンプの作成、リピートグリッド、プロトタイプ作成、コンポーネント分け。'
     },
     {
         icon: PsLogo,
@@ -145,7 +145,7 @@ const qualification = [
     {
         icon: FELogo,
         name: '基本情報技術者',
-        text: '午後問題の選択言語はC言語'
+        text: '午後問題の選択言語はC言語。'
     }
 ];
 
@@ -153,7 +153,7 @@ const editors = [
     {
         icon: VscodeLogo,
         name: 'VSCode',
-        text: 'Web制作業務で1年。それ以前から個人的に使用。Git操作、プラグインの使用'
+        text: 'Web制作業務で1年。それ以前から個人的に使用。Git操作、プラグインの使用。'
     },
     {
         icon: AsLogo,
@@ -168,17 +168,17 @@ const editors = [
     {
         icon: VimLogo,
         name: 'Vim',
-        text: 'ターミナルでのファイル操作で使用。基本操作ができる程度'
+        text: 'ターミナルでのファイル操作で使用。基本操作ができる程度。'
     },
     {
         icon: EclipseLogo,
         name: 'Eqlipse',
-        text: '学生時代のアプリ制作で少し使用した程度'
+        text: '学生時代のアプリ制作で少し使用した程度。'
     },
     {
         icon: MdLogo,
         name: 'MD',
-        text: '社内システム開発の資料制作で使用。基本的な文法がわかる程度'
+        text: '社内システム開発の資料制作で使用。基本的な文法がわかる程度。'
     }            
 ];
 const fwCms = [
@@ -190,7 +190,7 @@ const fwCms = [
     {
         icon: WpLogo,
         name: 'Word Press',
-        text: 'Webサイト作成に使用。レンタルサーバー上へ構築、既存テーマのカスタマイズ、オリジナルテーマの作成、'
+        text: 'Webサイト作成に使用。レンタルサーバー上へ構築、既存テーマのカスタマイズ、オリジナルテーマの作成。'
     }
 ];
 
@@ -203,7 +203,7 @@ const databases = [
     {
         icon: SqliteLogo,
         name: 'Sqlite',
-        text: '学生時代に開発に使用した程度'
+        text: '学生時代に開発に使用した程度。'
     }
 ];
 
