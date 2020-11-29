@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { breakPoint } from '../../common/breakPoint';
 import Icon from '../atoms/Icon'
 import LinkArea from '../molecules/LinkArea'
-import ProfleImage from '../../assets/images/profleImg.jpg'
+import ProfleImage from '../../assets/images/profileImg.jpg'
 import ScrollImage from '../../assets/images/scrollIcon.png'
 import BackGround from '../../assets/images/first-view-bg.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
