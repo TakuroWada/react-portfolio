@@ -53,7 +53,7 @@ class Carear extends React.Component {
                 {/* モバイル表示 */}
                 <MediaQuery query={this.spQuery} >
                     <CarearWrpper>
-                        <MogileImg src={CarearImgMobile} alt='Carearline'/>
+                        <img src={CarearImgMobile} alt='Carearline'/>
                         <div>
                             { this.carearList.map( (listItem) => {
                                 return <CarearCard value={listItem} />
@@ -71,12 +71,12 @@ class Carear extends React.Component {
                             <CarearCard value={this.carearList[4]} />
                         </CardWrapper>
 
-                        <PcImg src={CarearImg} alt='Carearline'/>
+                        <img src={CarearImg} alt='Carearline'/>
 
                         <CardWrapper>
                             <CarearCard value={this.carearList[1]} />
                             <CarearCard value={this.carearList[3]} />
-                            </CardWrapper>
+                        </CardWrapper>
                     </CarearWrpper>
                 </MediaQuery>
 
@@ -99,7 +99,7 @@ class CarearCard extends React.Component{
 
 // 以下スタイル
 const CarearContent = styled.div`
-    width: 100%fit-content;
+    width: 100%;
     padding: 24px 8px;
 
     h2 {
@@ -115,11 +115,28 @@ const CarearContent = styled.div`
 
 const CarearWrpper = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 24px;
+
+    img {
+            margin-top: 24px;
+        }
+
+    @media screen and (min-width: ${breakPoint.tabletMin}px) {
+
+        img {
+            margin-right: 24px;
+        }
+    }
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
         display: inherit;
         margin: 48px auto 0 auto;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
 `;
 
@@ -128,20 +145,13 @@ const CardWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     margin: 48px auto 0 auto;
-    max-width: 860px;
+    
 
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
+        max-width: 860px;
         margin: 0 auto;
+
     }
-`;
-
-const PcImg = styled.img`
-    display: block;
-    margin: 0 auto;
-`;
-
-const MogileImg = styled.img`
-    margin-top: 24px;
 `;
 
 const Card = styled.div.attrs(props => ({
