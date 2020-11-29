@@ -423,14 +423,16 @@ const TextArea = styled.div`
     color:#fafafa;
     border-radius: 4px;
     border: 1px solid #fafafa;
+    text-align: center;
 
     h4 {
-        text-align: center;
         color: skyblue;
     }
 
     p {
-        margin-top:8px;
+        display: inline-block;
+        margin:8px auto 0 auto;
+        text-align: left;
     }
 
     @media screen and (min-width: ${breakPoint.tabletMin}px) {
