@@ -333,13 +333,12 @@ const SelectBox = styled.select`
         color: #fafafa;
         border-radius: 4px;
         padding: 16px 32px;
-        text-align: center;
         margin: 24px auto 0 auto;
 
         background-image: url(${SelectIcon});
         background-repeat: no-repeat;
         background-size: 16px;
-        background-position: right 14px center;
+        background-position: right 10px center;
 `;
 
 const DisplayArea = styled.div`
@@ -422,7 +421,6 @@ const TextArea = styled.div`
     background-color: #131A29;
     color:#fafafa;
     border-radius: 4px;
-    border: 1px solid #fafafa;
     text-align: center;
 
     h4 {
