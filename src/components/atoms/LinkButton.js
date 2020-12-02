@@ -21,6 +21,10 @@ const Link = styled.a`
     padding: 8px;
     border-radius: 4px;
 
+    &:hover{
+        background-color: #3E485C;
+    }
+
     @media screen and (min-width: ${breakPoint.desktopMin}px) {
         width: 100px;
     }
