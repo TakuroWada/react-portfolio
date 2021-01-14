@@ -31,6 +31,7 @@ class LinkArea extends React.Component {
         {this.linkItem.map((listItem) => {
           return (
             <LinkButton
+              key={listItem.text}
               link={listItem.link}
               icon={listItem.icon}
               text={listItem.text}
