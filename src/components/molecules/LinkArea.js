@@ -13,11 +13,11 @@ class LinkArea extends React.Component {
       icon: GitHubIcon,
       text: "github",
     },
-    {
+    /*  {
       link: "https://qiita.com/TakuroWada",
       icon: QiitaIcon,
       text: "qiita",
-    },
+    // }, */
     {
       link: "https://www.instagram.com/dawa_taku/",
       icon: InstaIcon,
