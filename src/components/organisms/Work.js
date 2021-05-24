@@ -19,7 +19,7 @@ const workItem = [
     img: WorkImg1,
     url: "https://kanban-rescue.com/",
     title:
-      "かんばんの救急車サイトリニューアル / アイコン・キャラクターデザイン",
+      "かんばんの救急車サイトリニューアル/\nアイコン・キャラクターデザイン",
     period: "1ヶ月程度",
     scale: "1名",
     position: "要件定義、デザイン、コーディング、運用担当",
@@ -30,7 +30,7 @@ const workItem = [
   {
     img: WorkImg2,
     url: "https://kanban-rescue.com/lp/",
-    title: "かんばんの救急車LPデザインアイコン・キャラクターデザイン",
+    title: "かんばんの救急車LPデザイン\nアイコン・キャラクターデザイン",
     period: "2日程度",
     scale: "1名",
     position: "デザイン、コーディング、運用担当",
@@ -41,7 +41,7 @@ const workItem = [
   {
     img: WorkImg3,
     url: "https://kanbantatsujin.com/",
-    title: "看板製作撤去の達人サイトUIデザイン",
+    title: "看板製作撤去の達人サイト\nUI/UXデザイン",
     period: "1ヶ月程度",
     scale: "1-2名",
     position: "要件定義、UIデザイン、コーディング、運用担当",
@@ -74,7 +74,7 @@ const workItem = [
   {
     img: WorkImg6,
     url: "https://forest.toppan.co.jp/products/",
-    title: "凸版印刷環境デザイン (プロダクトページ以下)",
+    title: "凸版印刷環境デザイン  \n(プロダクトページ以下)",
     period: "2日",
     scale: "1名",
     position: "コーディング担当",
@@ -85,7 +85,7 @@ const workItem = [
   {
     img: WorkImg7,
     url: "https://www.siroca.co.jp/corporate/partner/",
-    title: "Sirocaサイト (法人ページコーディング)",
+    title: "Sirocaサイト \n(法人ページコーディング)",
     period: "2日",
     scale: "7名程度",
     position: "コーディング担当",
@@ -96,7 +96,7 @@ const workItem = [
   {
     img: WorkImg8,
     url: "https://gadget-master.web.app/",
-    title: "ガジェット管理Webアプリ「gadget master」",
+    title: "ガジェット管理Webアプリ \n「gadget master」",
     period: "3週間程度",
     scale: "1名",
     position: "個人制作",
