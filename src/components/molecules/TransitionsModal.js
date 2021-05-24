@@ -96,13 +96,14 @@ const useStyles = makeStyles((theme) => ({
   modalTitle: {
     fontSize: "20px",
     padding: "8px 0",
+    marginBottom: "16px",
     borderBottom: "2px solid #fff",
     [theme.breakpoints.down("sm")]: {
       fontSize: "16px",
     },
   },
   modallistItem: {
-    padding: "16px 0",
+    paddingBottom: "32px",
   },
   modalUrl: {
     color: "#BEF0FF",
@@ -110,6 +111,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: "16px",
     },
+  },
+  itemHed: {
+    display: "inline-block",
+    fontWeight: "bold",
+    color: "#BEF0FF",
+    margin: "0 8px 8px 0",
   },
   modalDateil: {
     display: "block",
@@ -198,27 +205,34 @@ const TransitionsModal = (props) => {
                 id="transition-modal-description"
                 className={classes.modallistItem}
               >
-                制作期間: {props.info.period}
+                <span className={classes.itemHed}>[ 制作期間 ]</span>
+                {props.info.period}
               </li>
               <li
                 id="transition-modal-description"
                 className={classes.modallistItem}
               >
-                規模: {props.info.scale}
+                <span className={classes.itemHed}>[ 規模 ]</span>
+                {props.info.scale}
               </li>
               <li
                 id="transition-modal-description"
                 className={classes.modallistItem}
               >
-                ポジション: {props.info.position}
+                <span className={classes.itemHed}>[ ポジション ]</span>
+                <br />
+                {props.info.position}
               </li>
               <li
                 id="transition-modal-description"
                 className={classes.modallistItem}
               >
-                使用技術: {props.info.technology}
+                <span className={classes.itemHed}>[ 使用技術 ]</span>
+                <br />
+                {props.info.technology}
               </li>
             </ul>
+            <span className={classes.itemHed}>[ ポイント ]</span>
             <taxtarea className={classes.modalDateil}>
               {props.info.detail}
             </taxtarea>
