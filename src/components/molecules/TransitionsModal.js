@@ -116,6 +116,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "16px",
     lineHeight: "1.6",
     border: "1px solid #fff",
+    whiteSpace: "pre-wrap",
     [theme.breakpoints.down("sm")]: {
       maxHeight: "200px",
       overflowY: "auto",
