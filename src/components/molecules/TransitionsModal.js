@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   workTitle: {
     minHeight: "36px",
+    whiteSpace: "pre-wrap",
   },
   workImg: {
     maxWidth: "380px",
@@ -99,17 +100,20 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "16px",
     borderBottom: "2px solid #fff",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "16px",
+      whiteSpace: "pre-wrap",
+      fontSize: "14px",
     },
   },
   modallistItem: {
     paddingBottom: "32px",
+    whiteSpace: "pre-wrap",
   },
   modalUrl: {
     color: "#BEF0FF",
     fontSize: "20px",
+    whiteSpace: "pre-wrap",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "16px",
+      fontSize: "14px",
     },
   },
   itemHed: {
