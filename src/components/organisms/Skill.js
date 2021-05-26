@@ -32,6 +32,7 @@ import EclipseLogo from "../../assets/images/eclipse.svg";
 import PsLogo from "../../assets/images/ps.png";
 import AiLogo from "../../assets/images/ai.svg";
 import XdLogo from "../../assets/images/xd.png";
+import FirebaseLogo from "../../assets/images/firebase-logo.svg";
 import VBLogo from "../../assets/images/vb-logo.png";
 import VagrantLogo from "../../assets/images/vagrant.svg";
 import RserverLogo from "../../assets/images/server.png";
@@ -114,6 +115,11 @@ const taskControl = [
 ];
 
 const infrastructure = [
+  {
+    icon: FirebaseLogo,
+    name: "Firebase",
+    text: "Firebaseを用いたWebアプリ開発の実務経験。個人制作でも使用。",
+  },
   {
     icon: VBLogo,
     name: "VirtualBox",
