@@ -109,7 +109,7 @@ class LearningItem extends React.Component {
 //以下スタイル
 const LearningContent = styled.div`
   width: 100%;
-  padding: 24px 8px;
+  padding: 24px 0px;
   background-color: #fafafa;
 
   h2 {
@@ -138,7 +138,6 @@ const DisplayArea = styled.div`
 
 const LearningSection = styled.div`
   background-color: ${(props) => props.color};
-  border-radius: 4px;
   color: #fafafa;
   padding: 32px 16px;
   margin: 16px auto 0 auto;

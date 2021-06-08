@@ -388,13 +388,15 @@ const CardWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 320px;
   width: 100%;
   margin: 8px auto 0 auto;
 
   button {
-    margin: 8px;
+    margin: 14px;
     font-size: 14px;
+    @media screen and (min-width: ${breakPoint.tabletMin}px) {
+      margin: 8px;
+    }
   }
 
   @media screen and (min-width: ${breakPoint.tabletMin}px) {
@@ -444,7 +446,6 @@ const SkillButton = styled.button`
 `;
 
 const TextArea = styled.div`
-  max-width: 300px;
   width: 100%;
   margin: 16px auto 0 auto;
   padding: 16px;
