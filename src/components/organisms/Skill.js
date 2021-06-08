@@ -283,16 +283,21 @@ class Skill extends React.Component {
         <SectionTitle title="Skill" />
 
         <SelectBox onChange={this.doChange}>
-          {option.map((item) => {
-            return <option value={item}>{item}</option>;
+          {option.map((item, index) => {
+            return (
+              <option key={index} svalue={item}>
+                {item}
+              </option>
+            );
           })}
         </SelectBox>
         <h3>{this.state.skillTitle}</h3>
         <DisplayArea>
           <CardWrapper>
-            {this.state.skillType.map((listItem) => {
+            {this.state.skillType.map((listItem, index) => {
               return (
                 <SkillCard
+                  key={index}
                   info={{
                     icon: listItem.icon,
                     name: listItem.name,
