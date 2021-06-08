@@ -57,8 +57,8 @@ class Carear extends React.Component {
           <CarearWrpper>
             <img src={CarearImgMobile} alt="Carearline" />
             <div>
-              {this.carearList.map((listItem) => {
-                return <CarearCard value={listItem} />;
+              {this.carearList.map((listItem, index) => {
+                return <CarearCard key={index} value={listItem} />;
               })}
             </div>
           </CarearWrpper>

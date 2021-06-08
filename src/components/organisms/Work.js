@@ -124,9 +124,10 @@ class Work extends React.Component {
         <SectionTitle title="Work" />
         <WorkText>クリックで詳細が開きます。</WorkText>
         <WorkWrappr>
-          {workItem.map((listItem) => {
+          {workItem.map((listItem, index) => {
             return (
               <TransitionsModal
+                key={index}
                 info={{
                   img: listItem.img,
                   url: listItem.url,

@@ -56,8 +56,14 @@ class Learning extends React.Component {
         <DisplayArea>
           <LearningSection color={this.nowSectionColor}>
             <h3>Now</h3>
-            {this.learningNow.map((listItem) => {
-              return <LearningItem icon={listItem.icon} name={listItem.name} />;
+            {this.learningNow.map((listItem, index) => {
+              return (
+                <LearningItem
+                  key={index}
+                  icon={listItem.icon}
+                  name={listItem.name}
+                />
+              );
             })}
           </LearningSection>
 
@@ -73,8 +79,14 @@ class Learning extends React.Component {
 
           <LearningSection color={this.nextSectionColor}>
             <h3>Next Level</h3>
-            {this.learningNext.map((listItem) => {
-              return <LearningItem icon={listItem.icon} name={listItem.name} />;
+            {this.learningNext.map((listItem, index) => {
+              return (
+                <LearningItem
+                  key={index}
+                  icon={listItem.icon}
+                  name={listItem.name}
+                />
+              );
             })}
           </LearningSection>
         </DisplayArea>
