@@ -6,33 +6,35 @@ import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
   workLink: {
-    maxWidth: "380px",
-    width: "100%",
-    margin: "24px",
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: "300px",
-      margin: "24px auto",
+    maxWidth: "100%",
+    margin: "24px auto",
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "380px",
+      width: "100%",
+      margin: "24px",
     },
   },
   workTitle: {
-    minHeight: "36px",
     whiteSpace: "pre-wrap",
+    [theme.breakpoints.up("sm")]: {
+      minHeight: "36px",
+    },
   },
   workImg: {
-    maxWidth: "380px",
+    maxWidth: "100%",
     width: "100%",
-    height: "200px",
+    height: "220px",
     objectPosition: "top center",
     objectFit: "cover",
-    borderRadius: "8px",
     cursor: "pointer",
-    padding: "8px",
+    paddingTop: "8px",
+    margin: "0 auto",
     "&:hover": {
       opacity: "0.8",
     },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: "300px",
-      margin: "0 auto",
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "380px",
+      margin: "0",
     },
   },
   modal: {
@@ -52,16 +54,18 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#272C34",
     color: "#fff",
     borderRadius: "8px",
-    padding: "128px 40px 16px 40px ",
     boxSizing: "border-box",
     overflowY: "scroll",
-    maxHeight: "750px",
+    fontSize: "14px",
+    maxHeight: "620px",
     height: "auto",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "14px",
-      maxHeight: "620px",
-      margin: "0 16px",
-      padding: "88px 16px 16px 16px",
+    margin: "0 16px",
+    padding: "88px 16px 16px 16px",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "16px",
+      maxHeight: "750px",
+      margin: "0",
+      padding: "128px 40px 16px 40px ",
     },
     "&::-webkit-scrollbar": {
       display: "none",
@@ -83,25 +87,26 @@ const useStyles = makeStyles((theme) => ({
     top: "0",
     left: "0",
     width: "100%",
-    height: "100px",
+    height: "80px",
     objectPosition: "0 0",
     objectFit: "cover",
     borderRadius: "8px 8px 0 0",
     "&:hover": {
       opacity: "0.8",
     },
-    [theme.breakpoints.down("sm")]: {
-      height: "80px",
+    [theme.breakpoints.up("sm")]: {
+      height: "100px",
     },
   },
   modalTitle: {
-    fontSize: "20px",
+    fontSize: "14px",
     padding: "8px 0",
     marginBottom: "16px",
     borderBottom: "2px solid #fff",
-    [theme.breakpoints.down("sm")]: {
-      whiteSpace: "pre-wrap",
-      fontSize: "14px",
+    whiteSpace: "pre-wrap",
+    [theme.breakpoints.up("sm")]: {
+      whiteSpace: "normal",
+      fontSize: "20px",
     },
   },
   modallistItem: {
@@ -110,10 +115,10 @@ const useStyles = makeStyles((theme) => ({
   },
   modalUrl: {
     color: "#BEF0FF",
-    fontSize: "20px",
+    fontSize: "14px",
     whiteSpace: "pre-wrap",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "14px",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "20px",
     },
   },
   itemHed: {
@@ -128,9 +133,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "1.6",
     border: "1px solid #fff",
     whiteSpace: "pre-wrap",
-    [theme.breakpoints.down("sm")]: {
-      maxHeight: "200px",
-      overflowY: "auto",
+    maxHeight: "200px",
+    overflowY: "auto",
+    [theme.breakpoints.up("sm")]: {
+      maxHeight: "auto",
     },
   },
 }));
@@ -147,7 +153,6 @@ const TransitionsModal = (props) => {
     setOpen(false);
   };
 
-  console.log(props);
   return (
     <div>
       {/* 開く */}

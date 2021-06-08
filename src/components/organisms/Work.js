@@ -150,7 +150,7 @@ class Work extends React.Component {
 //以下スタイル
 const WorkContent = styled.div`
   width: 100%;
-  padding: 64px 8px;
+  padding: 64px 0;
   background-image: url(${BackGround});
   background-size: cover;
 
@@ -163,7 +163,7 @@ const WorkContent = styled.div`
     font-weight: bold;
   }
 
-  @media screen and (min-width: ${breakPoint.tabletMin}px) {
+  @media screen and (min-width: ${breakPoint.PcMin}px) {
     padding: 64px 8px;
   }
 `;
