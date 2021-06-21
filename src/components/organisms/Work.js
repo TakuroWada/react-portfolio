@@ -12,6 +12,7 @@ import WorkImg6 from "../../assets/images/work6.png";
 import WorkImg7 from "../../assets/images/work7.png";
 import WorkImg8 from "../../assets/images/work8.png";
 import WorkImg9 from "../../assets/images/work9.png";
+import WorkImg10 from "../../assets/images/work10.png";
 import TransitionsModal from "../molecules/TransitionsModal";
 
 const workItem = [
@@ -48,6 +49,17 @@ const workItem = [
     technology: "HTML5, CSS3, JavaScript, WordPress(PHP), XD",
     detail:
       "自社事業サイトのリニューアル案件。もともとWordPressで出来ていたので、現場の希望もあり引き続き採用。\n\nこちらのサイトに関してはトップ画面のデザインをグラフィックデザイナーの方が作成していたため、そのデザインを元に他ページもカラーやフォントを合わせた。\n\nデザインがないページのUI、レスポンシブデザイン(スマホサイズに限らず、横幅が変化した時の見せ方)などを新規に考えてコーディングした。\n\nかんばんの救急車と同様のサービス内容のため、サイト構成的にかぶっている部分はあるが、デザインに変化をつけて差別化した。",
+  },
+  {
+    img: WorkImg10,
+    url: "https://pr-g.jp/web/210616report",
+    title: "クラウドコンシェルジュ「TSUNAGU」\nUIデザイン改善、開発",
+    period: "デザイン２週間程度",
+    scale: "開発５名",
+    position: "ディレクション、要件定義、デザイン、コーディング、運用担当",
+    technology: "React, GCP, Xd",
+    detail:
+      "半自社開発のWebアプリケーション。前任者からの引き継ぎで主にディレクションとデザイン改善を担当。\n\nシステム既存の作りとクライアントからの要望、スケジュール(炎上気味)を全て考慮してデザインに落とし込むのに苦労した。\nUIはかなり改善はしたが、まだまだ直感的でない部分も多くUX面で課題が残る。",
   },
   {
     img: WorkImg4,
